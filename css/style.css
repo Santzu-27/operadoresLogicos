@@ -112,6 +112,7 @@ main button {
     background-color: rgba(238, 255, 0, 0);
     border: 1px solid ;
     cursor: pointer;
+    transition: box-shadow .5s;
 }
 
 main div#button{
@@ -123,7 +124,7 @@ main div#button{
 
 main button:hover {
     box-shadow: inset .1px .1px 50px 9px rgba(229, 255, 0, 0.171);
-    transition: box-shadow .2s;
+    transition: box-shadow .15;
 }
 
 footer{
