@@ -16,7 +16,7 @@
     --sono1: 'Sono Light';
     --sono2: 'Sono Regular';
     --sono3: 'Sono Bolder';
-    --corFundo: rgb(18, 19, 20);
+    --corFundo: rgb(4, 13, 22);
 }
 
 *{
@@ -108,6 +108,7 @@ main button {
     height: 60px;
     color: rgb(255, 217, 0);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+    box-shadow: inset .1px .1px 20px rgba(255, 255, 255, 0.096);
     font: 1.8em var(--sono1), 'Arial', 'sans-serif';
     background-color: rgba(238, 255, 0, 0);
     border: 1px solid ;
@@ -115,11 +116,17 @@ main button {
     transition: box-shadow .5s;
 }
 
-main div#button{
+div#button{
     margin: auto;
     margin-top: 20px;
     box-shadow: 2px 2px 10px rgba(255, 255, 0, 0.336);
     width: fit-content;
+    transition: box-shadow .2s;
+}
+
+div#button:hover{
+    box-shadow: .1px 1px 1px rgba(0, 0, 0, 0);
+    transition: .4s;
 }
 
 main button:hover {
