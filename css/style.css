@@ -16,9 +16,11 @@
     --sono1: 'Sono Light';
     --sono2: 'Sono Regular';
     --sono3: 'Sono Bolder';
+    --corFundo: rgb(18, 19, 20);
 }
 
 *{
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
@@ -32,17 +34,16 @@ html, body{
 body {
     font: 1em var(--sono2), 'Arial', 'sans-serif';
     color: white;
-    background-color: rgb(21, 21, 27);
+    background-color:var(--corFundo);
 }
-p{
+
+.start{
     opacity: 0;
-    text-align: justify;
-    padding: 8px;
 }
 
 .render {
-    opacity: 100;
-    transition: opacity 8s;
+    opacity: 1;
+    transition: opacity 5s;
 }
 
 header{
@@ -55,19 +56,84 @@ h1{
     text-align: center;
     padding: 100px 0px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+}
 
+h1::before{
+    content: '';
+    position: absolute;;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to top, var(--corFundo), rgba(255, 255, 255, 0)45%);
 }
 
 h1::after{ /*Background H1*/
     content: '';
     position: absolute;
     background-image: url(../images/bg-start.jpg);
+    background-size:cover;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     opacity: .7;
-    z-index: -1;  
-    border-radius: 0% 0% 5% %; 
+    z-index: -1;
+}
+
+main > p {
+    font-size: .8em;
+    line-height: 1.5em;
+    padding: 20px 40px;
+}
+
+main > p::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 20px;
+    border-bottom:1.5px solid rgb(255, 174, 0);
+    margin:auto;
+    margin-top: 35px;
+    border-radius: 90%;
+}
+
+
+main button {
+    display: block;
+    box-sizing: border-box;
+    width: 220px;
+    height: 60px;
+    color: rgb(255, 217, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+    font: 1.8em var(--sono1), 'Arial', 'sans-serif';
+    background-color: rgba(238, 255, 0, 0);
+    border: 1px solid ;
+    cursor: pointer;
+}
+
+main div#button{
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 0, 0.336);
+    width: fit-content;
+}
+
+main button:hover {
+    box-shadow: inset .1px .1px 50px 9px rgba(229, 255, 0, 0.171);
+    transition: box-shadow .2s;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 4px;
+    font-size: .8em;
 }

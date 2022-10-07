@@ -1,5 +1,6 @@
 function renderMainPage(){
-    const mainP = document.querySelector('#main-p')
+    const mainP = document.querySelector('.start')
+    mainP.classList.remove('start')
     mainP.classList.add('render')
 }
 
