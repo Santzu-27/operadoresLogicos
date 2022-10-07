@@ -25,10 +25,9 @@
     padding: 0%;
 }
 
-html, body{
+body{
     box-sizing: border-box;
     width: 100vw;
-    min-height: 100vh;
 }
 
 body {
@@ -128,12 +127,12 @@ main button:hover {
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
     background-color: black;
     display: block;
     width: 100vw;
     text-align: center;
     padding: 4px;
     font-size: .8em;
+    position: absolute;
+    bottom: 0;
 }
