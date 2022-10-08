@@ -32,7 +32,7 @@ body{
 }
 
 body {
-    font: 1.14em var(--sono2), 'Arial', 'sans-serif';
+    font: 1.24em var(--sono2), 'Arial', 'sans-serif';
     color: white;
     background-color:var(--corBg);
 }
