@@ -7,7 +7,6 @@ renderMainPage()
 
 function renderApp(){
     let initialScreen = document.querySelector('#screen')
-    initialScreen.classList.add('animate__animated')
-    initialScreen.classList.add('animate__backOutUp')
+    initialScreen.classList.add('animate__animated', 'animate__backOutUp')
     console.log('aaa' + initialScreen)
 }
