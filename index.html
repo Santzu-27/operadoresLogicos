@@ -9,18 +9,25 @@
     <title>Lógica de Programação</title>
 </head>
 <body onload="renderMainPage()">
-    <header>
+    <header id="main-header">
         <h1 class="start">Lógica de Programação</h1>
     </header>
     <main class="start">
-        <p>Web-App criado com a finalidade de pôr em prática e exercitar aquilo que já aprendi com <strong>JavaScript</strong>, <strong>HTML5</strong> e <strong>CSS3</strong></p>
-        <div id="button">
-            <button>Avançar</button>
-        </div>
+        <section id="starting-page">
+            <p>Web-App criado com a finalidade de pôr em prática e exercitar aquilo que já aprendi com <strong>JavaScript</strong>, <strong>HTML5</strong> e <strong>CSS3</strong></p>
+            <div id="button">
+                <button onclick="renderApp()">Avançar</button>
+            </div>
+            <div style="display: none;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, autem. Quia velit dicta, inventore quod nostrum mollitia eos, nobis libero facilis laborum accusamus deserunt commodi animi, minima aliquid asperiores id.lorem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore, distinctio dolorem porro esse blanditiis nulla commodi debitis sequi ipsa ex aperiam, reiciendis rerum architecto deleniti quidem assumenda deserunt aut?
+            </div>
+        </section>
     </main>
     <footer>
         by Gabriel Santos de Souza
     </footer>
+
 </body>
 <script src="js/script.js"></script>
 </html>

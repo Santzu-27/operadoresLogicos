@@ -16,7 +16,8 @@
     --sono1: 'Sono Light';
     --sono2: 'Sono Regular';
     --sono3: 'Sono Bolder';
-    --corFundo: rgb(4, 13, 22);
+    --corBg: rgb(10, 16, 22);
+    --corYellow: rgb(255, 196, 0);
 }
 
 *{
@@ -33,7 +34,7 @@ body{
 body {
     font: 1em var(--sono2), 'Arial', 'sans-serif';
     color: white;
-    background-color:var(--corFundo);
+    background-color:var(--corBg);
 }
 
 .start{
@@ -43,6 +44,11 @@ body {
 .render {
     opacity: 1;
     transition: opacity 5s;
+}
+
+.hide{
+    opacity: 0;
+    transition: 2s;
 }
 
 header{
@@ -67,7 +73,7 @@ h1::before{
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: linear-gradient(to top, var(--corFundo), rgba(255, 255, 255, 0)45%);
+    background-image: linear-gradient(to top, var(--corBg), rgba(255, 255, 255, 0)45%);
 }
 
 h1::after{ /*Background H1*/
@@ -81,32 +87,32 @@ h1::after{ /*Background H1*/
     left: 0;
     opacity: .7;
     z-index: -1;
-}
+} 
 
-main > p {
+main > #starting-page > p {
     font-size: .8em;
     line-height: 1.5em;
     padding: 20px 40px;
 }
 
-main > p::after {
+main > #starting-page > p::after {
     content: '';
     display: block;
     width: 200px;
     height: 20px;
-    border-bottom:1.5px solid rgb(255, 174, 0);
+    border-bottom:1.5px solid var(--corYellow);
     margin:auto;
     margin-top: 35px;
     border-radius: 90%;
 }
 
 
-main button {
+main > #starting-page button {
     display: block;
     box-sizing: border-box;
     width: 220px;
     height: 60px;
-    color: rgb(255, 217, 0);
+    color: var(--corYellow);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
     box-shadow: inset .1px .1px 20px rgba(255, 255, 255, 0.096);
     font: 1.8em var(--sono1), 'Arial', 'sans-serif';
@@ -119,7 +125,7 @@ main button {
 div#button{
     margin: auto;
     margin-top: 20px;
-    box-shadow: 2px 2px 10px rgba(255, 255, 0, 0.336);
+    box-shadow: .1px .1px 10px rgba(255, 230, 0, 0.425);
     width: fit-content;
     transition: box-shadow .2s;
 }
@@ -129,7 +135,7 @@ div#button:hover{
     transition: .4s;
 }
 
-main button:hover {
+main > #starting-page button:hover {
     box-shadow: inset .1px .1px 50px 9px rgba(229, 255, 0, 0.171);
     transition: box-shadow .15;
 }
