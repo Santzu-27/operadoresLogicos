@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"> <!--Mobile First-->
     <link rel="stylesheet" href="css/media-queries.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Lógica de Programação</title>
 </head>
 <body onload="renderMainPage()">
-    <header id="main-header">
-        <h1 class="start">Lógica de Programação</h1>
-    </header>
-    <main class="start">
-        <section id="starting-page">
-            <p>Web-App criado com a finalidade de pôr em prática e exercitar aquilo que já aprendi com <strong>JavaScript</strong>, <strong>HTML5</strong> e <strong>CSS3</strong></p>
-            <div id="button">
-                <button onclick="renderApp()">Avançar</button>
-            </div>
-            <div style="display: none;">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, autem. Quia velit dicta, inventore quod nostrum mollitia eos, nobis libero facilis laborum accusamus deserunt commodi animi, minima aliquid asperiores id.lorem
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore, distinctio dolorem porro esse blanditiis nulla commodi debitis sequi ipsa ex aperiam, reiciendis rerum architecto deleniti quidem assumenda deserunt aut?
-            </div>
-        </section>
-    </main>
+    <div id="screen">
+        <header id="main-header">
+            <h1 class="start">Lógica de Programação</h1>
+        </header>
+        <main class="start">
+            <section id="introduction">
+                <p>Web-App criado com a finalidade de pôr em prática e exercitar aquilo que já aprendi com <strong>JavaScript</strong>, <strong>HTML5</strong> e <strong>CSS3</strong></p>
+                <div id="button">
+                    <button onclick="renderApp()">Avançar</button>
+                </div>
+                <div style="display: none;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, autem. Quia velit dicta, inventore quod nostrum mollitia eos, nobis libero facilis laborum accusamus deserunt commodi animi, minima aliquid asperiores id.lorem
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore, distinctio dolorem porro esse blanditiis nulla commodi debitis sequi ipsa ex aperiam, reiciendis rerum architecto deleniti quidem assumenda deserunt aut?
+                </div>
+            </section>
+        </main>
+    </div>
     <footer>
         by Gabriel Santos de Souza
     </footer>
-
 </body>
 <script src="js/script.js"></script>
 </html>

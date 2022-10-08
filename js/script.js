@@ -6,8 +6,8 @@ function renderMainPage(){
 renderMainPage()
 
 function renderApp(){
-    let mainHeader = document.querySelector ('#main-header');
-    let startingPage = document.querySelector('#starting-page');
-    mainHeader.classList.add('hide') 
-    startingPage.classList.add('hide')
+    let initialScreen = document.querySelector('#screen')
+    initialScreen.classList.add('animate__animated')
+    initialScreen.classList.add('animate__backOutUp')
+    console.log('aaa' + initialScreen)
 }

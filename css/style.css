@@ -48,7 +48,7 @@ body {
 
 .hide{
     opacity: 0;
-    transition: 2s;
+    transition-delay: 2s;
 }
 
 header{
@@ -89,13 +89,13 @@ h1::after{ /*Background H1*/
     z-index: -1;
 } 
 
-main > #starting-page > p {
+main > #introduction > p {
     font-size: .8em;
     line-height: 1.5em;
     padding: 20px 40px;
 }
 
-main > #starting-page > p::after {
+main > #introduction > p::after {
     content: '';
     display: block;
     width: 200px;
@@ -107,7 +107,7 @@ main > #starting-page > p::after {
 }
 
 
-main > #starting-page button {
+main > #introduction button {
     display: block;
     box-sizing: border-box;
     width: 220px;
@@ -135,10 +135,14 @@ div#button:hover{
     transition: .4s;
 }
 
-main > #starting-page button:hover {
+main > #introduction button:hover {
     box-shadow: inset .1px .1px 50px 9px rgba(229, 255, 0, 0.171);
     transition: box-shadow .15;
 }
+
+.animate__animated.animate__backOutUp {
+    --animate-duration: 2s;
+  }
 
 footer{
     background-color: black;
