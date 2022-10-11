@@ -6,7 +6,15 @@ function renderMainPage(){
 renderMainPage()
 
 function renderApp(){
-    let initialScreen = document.querySelector('#screen')
-    initialScreen.classList.add('animate__animated', 'animate__backOutUp', 'hide')
-    console.log('aaa' + initialScreen)
+    let initialScreen = document.querySelectorAll('.render')
+    console.log(initialScreen)
+    for (let i = 0; i < initialScreen.length; i++){
+        initialScreen[i].classList.add('animate__animated', 'animate__slideOutUp')
+    }
+
+    let secondPage = document.querySelector('#section--second-page')
+    secondPage.style.display = 'block'
+    secondPage.classList.remove('in-bottom')
+    secondPage.classList.add('to-top')
+    // secondPage.classList.add('animate__animated', 'animate__slideInUp', 'to-top')
 }
