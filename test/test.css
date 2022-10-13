@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+html, body{
+    overflow: hidden;
+}
+/* html { height: 100%; overflow:auto; }
+body { height: 100%; } */
+section{
+    font-size: 1.2em;
+    padding-bottom: 30px;
+    position: absolute;
+    transition: top 1.5s ease;
+}
+
+#first{
+    top: 0;
+}
+#second{
+    top: 800px;
+
+}
+
+#scrolltest{
+    width: 200px;
+    height: 200px;
+    border: 2px solid yellow;
+    overflow: scroll;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+

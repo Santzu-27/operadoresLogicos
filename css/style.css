@@ -28,39 +28,17 @@
 }
 
 body{
-    box-sizing: border-box;
     width: 100vw;
-    font: 1.24em var(--sono2), 'Arial', 'sans-serif';
+    font: 1em var(--sono2), 'Arial', 'sans-serif';
     color: white;
     background-color:var(--corBg);
 }
 
-html, body{
+body{
     overflow: hidden;
 }
 
-/* ACTION CLASSES*/
-/* ACTION CLASSES*/
-
-.start{
-    opacity: 0;
-}
-
-.render {
-    opacity: 1;
-    transition: opacity 5s;
-}
-
-.removed{
-    transition-duration: 2s;
-    display: none;
-}
-
-/* ACTION CLASSES*/
-/* ACTION CLASSES*/
-
 h1{
-    box-sizing: border-box;
     font-size: 2.3em;
     text-align: center;
     padding: 100px 0px;
@@ -92,6 +70,7 @@ h1::after{ /*Background H1*/
     opacity: .7;
     z-index: -1;
 } 
+
 #main--screen{
     opacity: 0;
     transition: opacity 2s;
@@ -103,14 +82,14 @@ main p {
     padding: 20px 40px;
 }
 
-#section--introduction{
-    top: 0;
-}
-
 #section--introduction, #section--second-page{
     position: absolute;
-    transition: top 1.5s ease;
+    transition: top 1.5s ease
 }
+
+.in-top{top:0;}
+.in-bottom{top: 1000px;}
+.in-upper{top:-1000px}
 
 #section--introduction > p::after {
     content: '';
@@ -125,7 +104,6 @@ main p {
 
 #section--introduction button {
     display: block;
-    box-sizing: border-box;
     width: 220px;
     height: 60px;
     color: var(--corYellow);
@@ -164,6 +142,7 @@ div#button:hover{
 }
 
 footer{
+
     background-color: black;
     display: block;
     width: 100vw;
@@ -171,12 +150,9 @@ footer{
     padding: 4px;
     font-size: .8em;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 
 /* ================================================================= */
 /* SEGUNDA PAGINA */
 /* ================================================================= */
-#section--second-page{
-    top: 750px;
-}
