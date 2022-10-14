@@ -29,7 +29,7 @@
 
 body{
     width: 100vw;
-    font: 1em var(--sono2), 'Arial', 'sans-serif';
+    font: 1.2em var(--sono2), 'Arial', 'sans-serif';
     color: white;
     background-color:var(--corBg);
 }
