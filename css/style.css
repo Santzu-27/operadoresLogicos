@@ -101,7 +101,7 @@ main p {
     border-radius: 90%;
 }
 
-#section--introduction button {
+main button {
     display: block;
     width: 220px;
     height: 60px;
@@ -115,7 +115,7 @@ main p {
     transition: box-shadow .5s;
 }
 
-div#button{
+div.button-main{
     margin: auto;
     margin-top: 20px;
     box-shadow: .1px .1px 10px rgba(255, 230, 0, 0.425);
@@ -123,18 +123,18 @@ div#button{
     transition: box-shadow .2s;
 }
 
-div#button:hover{
+div.button-main:hover{
     box-shadow: .1px 1px 1px rgba(0, 0, 0, 0);
     transition: .4s;
 }
 
-#section--introduction button:hover {
+main button:hover {
     box-shadow: inset .1px .1px 50px 9px rgba(229, 255, 0, 0.171);
     transition: box-shadow .15;
     transition: background-color 1s;
 }
 
-#section--introduction button:active{
+main button:active{
     text-shadow: .1px 1px .1px black;
     background-color: rgb(140, 147, 148);
     transition: background-color .2s;
@@ -157,3 +157,7 @@ footer{
 /* ============================================================== */
 
 #section--second-page{top: 900px}
+
+#section--second-page p{
+    margin-top: 150px;
+}

@@ -1,7 +1,7 @@
 let page1 = document.querySelector("#section--introduction")
 let page2 = document.querySelector("#section--second-page")
 let footer = document.getElementsByTagName('footer')
-let delay_ms = 20
+let delay_ms = 26
 
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
