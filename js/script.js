@@ -17,8 +17,6 @@ function renderMainPage(){
 }
 
 function nextPage(){
-    page1.classList.remove('in-top')
-    page1.classList.add('in-upper')
-    page2.classList.remove('in-bottom')
-    page2.classList.add('in-top')
+    page1.style.top = '-800px'
+    page2.style.top = '0'
 }

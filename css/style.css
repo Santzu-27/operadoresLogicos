@@ -80,6 +80,7 @@ main p {
     font-size: .8em;
     line-height: 1.5em;
     padding: 20px 40px;
+    text-align: justify;
 }
 
 #section--introduction, #section--second-page{
@@ -87,9 +88,7 @@ main p {
     transition: top 1.5s ease
 }
 
-.in-top{top:0;}
-.in-bottom{top: 1000px;}
-.in-upper{top:-1000px}
+#section--introduction{top: 0}
 
 #section--introduction > p::after {
     content: '';
@@ -153,6 +152,8 @@ footer{
     bottom: 0px;
 }
 
-/* ================================================================= */
+/* ==============================================================*/
 /* SEGUNDA PAGINA */
-/* ================================================================= */
+/* ============================================================== */
+
+#section--second-page{top: 900px}
