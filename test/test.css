@@ -1,46 +1,74 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Sono Regular';
+    src: url(../fonts/Sono-Regular.ttf);
+}
+@font-face {
+    font-family: 'Sono Light';
+    src: url(../fonts/Sono-Light.ttf);
+}
+@font-face {
+    font-family: 'Sono Bolder';
+    src: url(../fonts/Sono-ExtraBold.ttf);
+}
+
+:root{
+    --sono1: 'Sono Light';
+    --sono2: 'Sono Regular';
+    --sono3: 'Sono Bolder';
+    --corBg: rgb(10, 16, 22);
+    --corYellow: rgb(255, 196, 0);
+    --animate-delay: 2s;
+}
+
 *{
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    font-size: 1em;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    font-size: 2em;
-}
-
-html, body{
-    overflow: hidden;
-}
-/* html { height: 100%; overflow:auto; }
-body { height: 100%; } */
-section{
-    font-size: 1.2em;
-    padding-bottom: 30px;
-    position: absolute;
-    transition: top 1.5s ease;
-}
-
-#first{
-    top: 0;
-}
-#second{
-    top: 800px;
-
-}
-
-#scrolltest{
-    width: 200px;
-    height: 200px;
-    border: 2px solid yellow;
-    overflow: scroll;
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    background-color: black;
+body{
+    background-color: var(--corBg);
+    font-family: var(--sono1);
     color: white;
 }
+input{
+    display: inline;
+    font: bold 1em var(--sono3);
+    height: 40px;
+    width: min(20vw, 80px);
+}
+#div-operations{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    /* overflow: hidden; */
+    margin: auto;
+}
+#operation-buttons{
+    display:inline-flex;
+    margin: 0 215x;
+}
+#operation-buttons > button{
+    min-width:30px;
+    height: 35px;
+    display: inline;
+    font: normal 1.3em var(--sono2);
+    color: var(--corYellow);
+    background-color: rgba(255, 255, 255, 0);
+    border: .1px solid var(--corYellow);
+    margin: 0 1px;
+    cursor: pointer;
+    transition: .5s;
+}
 
+#operation-buttons > button:hover{
+    transition: .2s;
+    box-shadow: inset .1px .1px 6px 2px rgba(255, 122, 13, 0.747);
+    color: rgb(255, 235, 56);
+    text-shadow: .1px 1px 1px rgb(230, 0, 0);
+}
+
+button#testee{
+    display: block;
+}

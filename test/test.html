@@ -1,41 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
-    <title>Testin</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <main id="mainp">
-        <section id="first">
-            <header>
-                <h1>Teste</h1>
-            </header>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ratione officia quod sit vero adipisci acere mollitia odio quae repellendus. Magni ducimus sunt maxime quam beatae ex molestias, optio dolores.
-            </p>
-            <div>
-                <button onclick="avancar()">
-                    Avançar
-                </button>
-            </div>
-            <div id="scrolltest"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde fuga, ducimus incidunt commodi exercitationem provident optio qui quidem laudantium! Debitis alias suscipit veniam perspiciatis iure, adipisci recusandae dolores! Quaerat.</p></div>
-            <button id="buttontest">to top</button>
-        </section>
-
-        <section id="second" class="section--hidden">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae atque itaque architecto obcaecati
-                ipsum, autem voluptatem a, maxime ab consectetur nisi voluptatibus optio aliquid ipsam minima? Hic,
-                quisquam ullam.
-            </p>
-        </section>
-    </main>
-    <footer>olaola</footer>
+    <h1>Digite os números para comparação</h1>
+    <div id="div-operations">
+        <input type="number" name="valor" id="id-valor" step="1" required max="999" min="-999">
+        <div id="operation-buttons">
+            <button id="bt1">></button>
+            <button id="bt2"><</button>
+            <button id="bt3">≥</button>
+            <button id="bt4">≤</button>
+            <button id="bt5">=</button>
+            <button id="bt6" class="operators">≠</button>
+        </div>
+        <input type="number" name="valor2" id="id-valor2" step="1" required max="999" min="-999">
+    </div>
     <script src="test.js"></script>
 </body>
-
 </html>

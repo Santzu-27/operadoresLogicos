@@ -11,9 +11,7 @@
     <title>Lógica de Programação</title>
 </head>
 
-<body onload="renderMainPage()">
-    <script src="js/script.js" onload="toTop()" defer></script>
-    
+<body>    
     <main id="main--screen">
         <section id="section--introduction" class="in-top">
             <header>
@@ -24,19 +22,26 @@
                 <strong>JavaScript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> e em especial, lógica de programação
             </p>
             <div class="button-main">
-                <button onclick="nextPage()">Avançar</button>
+                <button id="button1">Avançar</button>
             </div>
         </section>
         <section id="section--second-page">
             <p>
                 O objetivo foi criar um sistema que em que o usuário digitasse as expressões que desejasse, para que em seguida, o aplicativo as avaliassem em 'verdadeiro' ou 'falso'. 
             </p>
-            <div class="button-main"><button>COMEÇAR</button></div>
+            <div class="button-main">
+                <button id="button-start">COMEÇAR</button>
+            </div>
         </section>
     </main>
-    <footer onclick="renderMainPage()">
+    <div id="application">
+        <p></p>
+        <div id="footer2">by Gabriel Santos de Souza</div>
+    </div>
+    <footer id="first--footer">
         by Gabriel Santos de Souza
     </footer>
+    <script src="js/script.js"defer></script>
 </body>
 
 </html>
