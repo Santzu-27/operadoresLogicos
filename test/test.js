@@ -1,20 +1,26 @@
 const buttons = []
-const values = {
-    value 
-}
-document.addEventListener('DOMContentLoaded', getButtons)
+
+document.addEventListener('DOMContentLoaded', startButtons)
 
 function getButtons (){
-    for (var i=0; i<=5 ; i++){
-        buttons[i] = document.querySelector(`#bt${i+1}`)
-    }
-    startButtons()
+    
 }
 
 function startButtons(){
     for (let i=0; i<=5 ; i++){
-        buttons[i].addEventListener('click',{
-            
+        buttons[i] = document.getElementById(`bt${i+1}`)
+        buttons[i].addEventListener('click', function(){
+            switch (i){
+                case 0:
+                    console.log('oi')
+                    break
+                case 1:
+                    console.log('opa')
+                    break
+                default:
+                    console.log('aaaw')
+                    break
+            }
         })
     }
 }
