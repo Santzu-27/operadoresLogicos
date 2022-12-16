@@ -9,8 +9,14 @@ let chosenValues = {
     v2: undefined
 }
 let results = []
-let paragraphs = []
+
 const div = document.querySelector('#div-results')
+const uls = {
+    n1: document.getElementById('c-number'),
+    n2: document.getElementById('c-number2'),
+    operators: document.getElementById('chosen-op'),
+    ulResult: document.getElementById('true-or-false'),
+}
 
 const buttonSent = document.querySelector('#button-sent');
 
@@ -28,28 +34,44 @@ function startButtons(){
             } else{
                 chosenValues.v1 = Number(chosenValues.v1)
                 chosenValues.v2 = Number(chosenValues.v2)
+                let currentP = undefined
+                let x = undefined
                 switch (i){
                     case 0:
                         results.push(chosenValues.v1 > chosenValues.v2)
-                        let currentP = createParagraphs()
-
-                        paragraphs[currentP].innerHTML = `aaaa`
-
+                        x = results.length-1
+                        op = '>'
+                        createUls(results[x], op)
                         break
                     case 1:
-                        console.log(valores.v1.value < valores.v2.value)
+                        results.push(chosenValues.v1 < chosenValues.v2)
+                        x = results.length-1
+                        op = '<'
+                        createUls(results[x], op)
                         break
                     case 2:
-                        console.log(valores.v1.value >= valores.v2.value)
+                        results.push(chosenValues.v1 >= chosenValues.v2)
+                        x = results.length-1
+                        op = '≥'
+                        createUls(results[x], op)
                         break
                     case 3:
-                        console.log(valores.v1.value <= valores.v2.value)
+                        results.push(chosenValues.v1 <= chosenValues.v2)
+                        x = results.length-1
+                        op = '≤'
+                        createUls(results[x], op)
                         break
                     case 4:
-                        console.log(valores.v1.value === valores.v2.value)
+                        results.push(chosenValues.v1 === chosenValues.v2)
+                        x = results.length-1
+                        op = '='
+                        createUls(results[x], op)
                         break
                     case 5:
-                        console.log(valores.v1.value != valores.v2.value)
+                        results.push(chosenValues.v1 != chosenValues.v2)
+                        x = results.length-1
+                        op = '≠'
+                        createUls(results[x], op)
                         break
                 }
             }
@@ -62,20 +84,24 @@ function getValues(){
     chosenValues.v2 = inputs.input2.value
 }
 
-function trueOrFalse(x){
-    if (x === true){
-        document.querySelector(".result-logic").classList.add('r-true')
-    }else{
-        document.querySelector(".result-logic").classList.add('r-false')
-    }
-}
+function createUls(A, B){
+    let liN = document.createElement('li')
+    liN.innerHTML = chosenValues.v1
+    uls.n1.appendChild(liN)
+    liN.classList.add('chosen-values')
 
-function createParagraphs(x){
-    paragraphs.push(document.createElement('p'))
-    x = paragraphs.length-1
+    liN = document.createElement('li')
+    liN.classList.add('chosen-values')
+    liN.innerHTML = chosenValues.v2
+    uls.n2.appendChild(liN)
 
-    paragraphs[x].setAttribute('id', `pg${paragraphs.length}`)
+    liN = document.createElement('li')
+    liN.classList.add('middle')
+    liN.innerHTML = B
+    uls.operators.appendChild(liN)
 
-    div.appendChild(paragraphs[x])
-    return x
+    liN = document.createElement('li')
+    liN.innerHTML = A
+    if (A){liN.classList.add('r-true')} else {liN.classList.add('r-false')}
+    uls.ulResult.appendChild(liN)
 }

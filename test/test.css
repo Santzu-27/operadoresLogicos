@@ -34,18 +34,21 @@ body{
 }
 input{
     display: inline-block;
-    font: bold 2em var(--sono3);
+    font: bold 1.7em var(--sono3);
     height: 60px;
-    width: min(30vw, 160px);
+    width: min(28vw, 120px);
     vertical-align: middle;
 }
+
+/* ==================================
+   =============BOTÕES===============
+   ==================================*/
 #div-operations{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-    /* overflow: hidden; */
     margin: 10px auto;
 }
 #operation-buttons{
@@ -53,9 +56,8 @@ input{
     width: 130px;
     margin: 0 215x;
 }
+
 .operators{
-    /* width:40px;
-    height: 50px; */
     padding: 2px 7px;
     display: inline;
     font: normal 2em var(--sono1);
@@ -75,20 +77,37 @@ input{
     background-color: rgba(182, 216, 255, 0.534);
 }
 
+/* ============================== 
+   ========RESULTADOS============ 
+   ============================== */
+
 #div-results{
     text-align: center;
-    margin: 20px;
+    margin: 20px 0;
+    width: 100%;
     font-size: 1.3em;
 }
 
-span.chosen-values{
-    color: aqua;
-    font-weight: bold;
+#div-results p {
+    width: fit-content;
+    margin: auto; 
+    text-align: justify;
 }
 
-.r-true{
-    color: greenyellow;
+.chosen-values{
+    color: rgb(200, 219, 255);
+    font-weight: bold;
+    text-align: right;
 }
-.r-false{
-    color: red
-}
+
+.r-true {color: greenyellow; font-weight: bolder;}
+.r-false {color: red; font-weight: bolder;}
+
+
+
+/*==================================
+  ===========ULS====================
+  ==================================*/
+
+  ul{display: inline-block; list-style: none;}
+li{list-style: none;}
