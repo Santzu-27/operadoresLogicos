@@ -31,48 +31,52 @@ function startButtons(){
             getValues()
             if(chosenValues.v1 === ''|| chosenValues.v2 === ''){
                 window.alert('Digite os dois valores!')
-            } else{
+            } else {
                 chosenValues.v1 = Number(chosenValues.v1)
                 chosenValues.v2 = Number(chosenValues.v2)
-                let currentP = undefined
-                let x = undefined
-                switch (i){
-                    case 0:
-                        results.push(chosenValues.v1 > chosenValues.v2)
-                        x = results.length-1
-                        op = '>'
-                        createUls(results[x], op)
-                        break
-                    case 1:
-                        results.push(chosenValues.v1 < chosenValues.v2)
-                        x = results.length-1
-                        op = '<'
-                        createUls(results[x], op)
-                        break
-                    case 2:
-                        results.push(chosenValues.v1 >= chosenValues.v2)
-                        x = results.length-1
-                        op = '≥'
-                        createUls(results[x], op)
-                        break
-                    case 3:
-                        results.push(chosenValues.v1 <= chosenValues.v2)
-                        x = results.length-1
-                        op = '≤'
-                        createUls(results[x], op)
-                        break
-                    case 4:
-                        results.push(chosenValues.v1 === chosenValues.v2)
-                        x = results.length-1
-                        op = '='
-                        createUls(results[x], op)
-                        break
-                    case 5:
-                        results.push(chosenValues.v1 != chosenValues.v2)
-                        x = results.length-1
-                        op = '≠'
-                        createUls(results[x], op)
-                        break
+                if ((chosenValues.v1 || chosenValues.v2) > 999 || (chosenValues.v2 || chosenValues.v1) < -999){
+                    alert("Os valores não podem ser maiores que 999 nem menores que <br> -999")
+                }else{
+                    let currentP = undefined
+                    let x = undefined
+                    switch (i){
+                        case 0:
+                            results.push(chosenValues.v1 > chosenValues.v2)
+                            x = results.length-1
+                            op = '>'
+                            createUls(results[x], op)
+                            break
+                        case 1:
+                            results.push(chosenValues.v1 < chosenValues.v2)
+                            x = results.length-1
+                            op = '<'
+                            createUls(results[x], op)
+                            break
+                        case 2:
+                            results.push(chosenValues.v1 >= chosenValues.v2)
+                            x = results.length-1
+                            op = '≥'
+                            createUls(results[x], op)
+                            break
+                        case 3:
+                            results.push(chosenValues.v1 <= chosenValues.v2)
+                            x = results.length-1
+                            op = '≤'
+                            createUls(results[x], op)
+                            break
+                        case 4:
+                            results.push(chosenValues.v1 === chosenValues.v2)
+                            x = results.length-1
+                            op = '='
+                            createUls(results[x], op)
+                            break
+                        case 5:
+                            results.push(chosenValues.v1 != chosenValues.v2)
+                            x = results.length-1
+                            op = '≠'
+                            createUls(results[x], op)
+                            break
+                }
                 }
             }
         })
