@@ -37,7 +37,7 @@ input{
     display: inline-block;
     font: bold 1.7em var(--sono3);
     height: 60px;
-    width: min(24vw, 150px);
+    width: min(28vw, 130px);
     vertical-align: middle;
 }
 
@@ -66,7 +66,7 @@ h1{
     display:inline-block;
     width: 150px;
     min-width: 150px;
-    margin: 0 1em;
+    margin: 0 .8em;
 }
 
 .operators{
