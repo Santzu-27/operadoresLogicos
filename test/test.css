@@ -37,7 +37,7 @@ input{
     display: inline-block;
     font: bold 1.7em var(--sono3);
     height: 60px;
-    width: min(60vw, 500px);
+    width: min(28vw, 150px);
     vertical-align: middle;
 }
 
@@ -64,8 +64,8 @@ h1{
 }
 #operation-buttons{
     display:inline-block;
-    width: 150px;
-    min-width: 150px;
+    width: 35vw;
+    max-width: 170px;
     margin: 0 .8em;
 }
 
