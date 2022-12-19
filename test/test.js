@@ -1,5 +1,5 @@
 const buttons = []
-
+let slBts = []
 const inputs = {
     input1: document.querySelector('#id-valor'),
     input2: document.querySelector('#id-valor2')
@@ -100,6 +100,7 @@ function getValues(){
 
 function createUls(operator, trueOrFalse, value1, value2){
     ul = document.createElement("ul")
+    ul.setAttribute('id', 'results'+results.length)
     div.appendChild(ul)
     return{
         operator, trueOrFalse, value1, value2
@@ -121,9 +122,19 @@ function createLis(y){
     liV2.innerHTML = ulsValues[y].value2
     liAns.innerHTML = ulsValues[y].trueOrFalse
     ul.appendChild(liV1); ul.appendChild(liOp); ul.appendChild(liV2); ul.appendChild(liAns)
+    addBooleanButtons()
 }
 
 function tOrF(y){
     ans = ulsValues[y].trueOrFalse === true ? 'r-true' : 'r-false';
     return ans
+}
+
+function addBooleanButtons(){
+    let divBoolean = document.getElementById('boolean-button').innerHTML
+    let newDiv = document.createElement('div')
+    newDiv.classList.add('boolean-buttons'+ results.length)
+    newDiv.innerHTML = divBoolean
+    div.appendChild(newDiv)
+    
 }

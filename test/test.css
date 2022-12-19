@@ -17,6 +17,7 @@
     --sono2: 'Sono Regular';
     --sono3: 'Sono Bolder';
     --corBg: rgb(10, 16, 22);
+    --corButton:rgba(45, 11, 109, 0.233);
     --corYellow: rgb(255, 196, 0);
     --animate-delay: 2s;
 }
@@ -37,7 +38,8 @@ input{
     display: inline-block;
     font: bold 1.7em var(--sono3);
     height: 60px;
-    width: min(28vw, 150px);
+    width: 25vw;
+    min-width: 110px;
     vertical-align: middle;
 }
 
@@ -64,17 +66,19 @@ h1{
 }
 #operation-buttons{
     display:inline-block;
-    width: 35vw;
+    min-width: 138px;
     max-width: 170px;
     margin: 0 .8em;
 }
 
 .operators{
-    padding: 2px 7px;
+    width: 5vw;
+    max-width: 1.5em;
+    min-width: 1em;
     display: inline;
     font: normal 2em var(--sono1);
     color: var(--corYellow);
-    background-color: rgba(45, 11, 109, 0.233);
+    background-color: var(--corButton);
     border: .1px solid var(--corYellow);
     margin: 2px -2px;
     cursor: pointer;
@@ -84,8 +88,7 @@ h1{
 .operators:hover{
     transition: .4s;
     font-weight: bolder;
-    box-shadow: inset .1px .1px 8px 2px rgba(0, 0, 0, 0.747);
-    color: rgb(252, 207, 58);
+    color: rgb(252, 191, 58);
     background-color: rgba(182, 216, 255, 0.534);
 }
 
@@ -115,7 +118,6 @@ ul{
     text-align: center;
     width: 80%;
     max-width: 500px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.274);
     padding: 10px 0;
     position: relative;
     margin: auto;
@@ -138,7 +140,35 @@ ul{
 .r-true {color: greenyellow; font-weight: bolder;}
 .r-false {color: red; font-weight: bolder;}
 
+/*----------------------------------------------------------------
+/*---------------BOOLEAN BUTTONS
+/*----------------------------------------------------------------*/
 
+div.boolean-buttons > button{
+    font-size: 1em;
+    width: 3em;
+    margin:0 10px;
+    color: var(--corYellow);
+    background-color:var(--corButton);
+    border: 1px solid var(--corYellow);
+    cursor:pointer;
+    transition: .5s;
+}
 
+div.boolean-buttons > button:hover{
+    font-weight: bolder;
+    background-color: rgba(182, 216, 255, 0.534);
+}
 
-li{list-style: none;}
+.actived { background-color: white;}
+
+div.boolean-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+div#boolean-button{
+    visibility: hidden;
+    text-align: center;
+}
+
