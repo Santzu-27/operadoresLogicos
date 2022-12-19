@@ -37,7 +37,7 @@ input{
     display: inline-block;
     font: bold 1.7em var(--sono3);
     height: 60px;
-    width: min(28vw, 130px);
+    width: min(28vw, 220px);
     vertical-align: middle;
 }
 
