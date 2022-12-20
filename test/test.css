@@ -37,7 +37,7 @@ body{
     transition: background-image .8s;
     background-size:105%;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 input{
     display: inline-block;
