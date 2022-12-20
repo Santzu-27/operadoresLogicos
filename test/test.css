@@ -106,16 +106,13 @@ h1{
 li{
     display: inline-block;
     text-align: center;
-    width: 10vw;
+    width: fit-content;
     max-width: 2.3em;
-    padding-left:0 ;
+    margin-right: 15px;
 }
-li.first{margin-left: -180px;}
 
 ul{
-    align-items:center;
-    justify-content: center;
-    text-align: center;
+    display: flex;
     width: 80%;
     max-width: 500px;
     padding: 10px 0;
@@ -131,10 +128,12 @@ ul{
 .r-true, .r-false{
     text-align: right; 
     position: absolute;
-    right: 40px;
+    right: 0;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.747);
     width: fit-content;
     max-width: none;
+    padding: 0;
+    margin: 0;
 } 
 
 .r-true {color: greenyellow; font-weight: bolder;}
@@ -160,11 +159,19 @@ div.boolean-buttons > button:hover{
     background-color: rgba(182, 216, 255, 0.534);
 }
 
-.actived { background-color: white;}
+div.boolean-buttons > button.activated {
+    background-color: rgba(255, 255, 255, 0.356);
+    box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.733);
+    font-weight: bolder;
+}
 
 div.boolean-buttons{
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+    width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
 }
 
 div#boolean-button{

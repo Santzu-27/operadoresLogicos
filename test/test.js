@@ -133,8 +133,23 @@ function tOrF(y){
 function addBooleanButtons(){
     let divBoolean = document.getElementById('boolean-button').innerHTML
     let newDiv = document.createElement('div')
-    newDiv.classList.add('boolean-buttons'+ results.length)
+
+    newDiv.setAttribute('id', 'boolean-button'+results.length)
     newDiv.innerHTML = divBoolean
-    div.appendChild(newDiv)
     
+    newDiv.classList.add('boolean-buttons')
+    let thisButtons = newDiv.getElementsByClassName('sl')
+    
+    for(let i = 0; i < thisButtons.length; i++) {
+        thisButtons[i].addEventListener('click', function(){
+            thisButtons[i].classList.add('activated')
+            if (i===1)
+            {thisButtons[0].classList.remove('activated')
+            slBts.push('||')
+            }
+            else
+            {thisButtons[1].classList.remove('activated')}
+        })
+    }
+    div.appendChild(newDiv)
 }
