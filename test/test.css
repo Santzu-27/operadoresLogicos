@@ -39,7 +39,7 @@ section{
     background-size:cover;
     background-attachment: fixed;
     background-repeat: repeat-y;
-    height: 100vh;
+    position: fixed;
     padding: 20px;
 }
 input{
