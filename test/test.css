@@ -32,15 +32,10 @@ body{
     font-family: var(--sono1);
     background-color: var(--corBg);
     color: white;
-}
-section{
     background-image: url(../images/BgOp.jpg);
-    transition: background-image .8s;
-    background-size:cover;
+    background-size: 100%;
     background-attachment: fixed;
-    background-repeat: repeat-y;
-    position: fixed;
-    padding: 20px;
+    height: 100vh;
 }
 input{
     display: inline-block;
