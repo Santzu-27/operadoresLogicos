@@ -32,6 +32,7 @@ body{
     font-family: var(--sono1);
     background-color: var(--corBg);
     color: white;
+    padding: 20px;
     background-image: url(../images/BgOp.jpg);
     background-size: 100%;
     background-attachment: fixed;
