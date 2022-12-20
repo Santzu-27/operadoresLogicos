@@ -36,7 +36,7 @@ body{
     background-image: url(../images/BgOp.jpg);
     transition: background-image .8s;
     background-size:100%;
-    background-position: center;
+    /* background-position: center; */
     /* background-position: center; */
     background-attachment: fixed;
     background-repeat: no-repeat;
