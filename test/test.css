@@ -29,10 +29,13 @@
 }
 
 body{
-    background-color: var(--corBg);
     font-family: var(--sono1);
     color: white;
     padding: 20px;
+    background-image: url(../images/BgOp.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
 }
 input{
     display: inline-block;
