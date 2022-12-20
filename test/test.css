@@ -35,7 +35,7 @@ body{
     padding: 20px;
     background-image: url(../images/BgOp.jpg);
     transition: background-image .8s;
-    background-size:cover;
+    background-size:100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
