@@ -33,6 +33,7 @@ body{
     background-color: var(--corBg);
     color: white;
     padding: 20px;
+    height: 100vh;
     background-image: url(../images/BgOp.jpg);
     transition: background-image .8s;
     background-size:105%;
