@@ -49,7 +49,7 @@ h1{
 
 h1::before{
     content: '';
-    position: absolute;;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -81,11 +81,13 @@ main p {
     line-height: 1.5em;
     padding: 20px 40px;
     text-align: justify;
+    margin: auto;
 }
 
 #section--introduction, #section--second-page{
     position: absolute;
-    transition: top 1.5s ease
+    transition: top 1.5s ease;
+    width: 100%;
 }
 
 #section--introduction{top: 0}

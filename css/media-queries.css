@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 1.5em;
+    }
+    p{
+        width: 1100px;
+    }
+    #section--second-page p{
+        width: 650px;
+    }
+}

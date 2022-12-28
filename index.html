@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css?<?=filemtime('style.css');?">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <!-- <link rel="stylesheet" href="css/style.css">; -->
     <!--Mobile First-->
-
     <title>Lógica de Programação</title>
 </head>
 
-<body>    
+<body>
     <main id="main--screen">
         <section id="section--introduction" class="in-top">
             <header>
                 <h1>Lógica de Programação</h1>
             </header>
-            <p>
-                Web-App criado com a finalidade de pôr em prática e exercitar aquilo que já aprendi com
-                <strong>JavaScript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> e em especial, lógica de programação
-            </p>
-            <div class="button-main">
-                <button id="button1">Avançar</button>
+            <div id="div1">
+                <p id="p1">
+                    Web-App criado com a finalidade de pôr em prática e exercitar aquilo que já aprendi com
+                    <strong>JavaScript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong> e em especial, lógica de programação
+                </p>
+                <div class="button-main">
+                    <button id="button1">Avançar</button>
+                </div>
             </div>
         </section>
         <section id="section--second-page">
@@ -34,7 +37,7 @@
             </div>
         </section>
     </main>
-    <footer id="first--footer">
+    <footer>
         by Gabriel Santos de Souza
     </footer>
     <script src="js/script.js"defer></script>
