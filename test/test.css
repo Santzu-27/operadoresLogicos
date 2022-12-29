@@ -121,7 +121,7 @@ ul{
     position: relative;
     margin: auto;
     border-bottom: 1px solid white;
-    padding-bottom: 2em;
+    padding-bottom: 32px;
 }
 
 .chosen-values{
