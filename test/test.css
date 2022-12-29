@@ -119,6 +119,8 @@ ul{
     padding: 10px 0;
     position: relative;
     margin: auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 2em;
 }
 
 .chosen-values{
@@ -140,10 +142,10 @@ ul{
 .r-true {color: greenyellow; font-weight: bolder;}
 .r-false {color: red; font-weight: bolder;}
 
-/*----------------------------------------------------------------
+/* ----------------------------------------------------------------
 /*---------------BOOLEAN BUTTONS
 /*----------------------------------------------------------------*/
-
+/* 
 div.boolean-buttons > button{
     font-size: 1em;
     width: 3em;
@@ -178,5 +180,5 @@ div.boolean-buttons{
 div#boolean-button{
     visibility: hidden;
     text-align: center;
-}
+} */
 
