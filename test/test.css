@@ -34,7 +34,8 @@ body{
     color: white;
     padding: 20px;
     background-image: url(../images/BgOp.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 input{
