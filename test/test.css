@@ -38,7 +38,6 @@ body{
     padding: 20px;
     background-image: url(../images/BgOp.jpg);
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
 }
 input{

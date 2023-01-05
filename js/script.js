@@ -1,7 +1,7 @@
 let page1 = document.querySelector("#section--introduction")
 let page2 = document.querySelector("#section--second-page")
 let pageApp = document.querySelector('#application')
-let delay_ms = 26
+let delay_ms = 40
 let delayDisplay = 500
 renderMainPage()
 
