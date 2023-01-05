@@ -35,7 +35,6 @@ function startApp(){
     let mainScreen = document.querySelector('#main--screen')
     mainScreen.style.transition = 'opacity .5s, display 2s'
     hideMain()
-    mainScreen.style.opacity = 0
 }
 
 function hideMain(){
