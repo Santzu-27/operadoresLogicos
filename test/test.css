@@ -38,6 +38,7 @@ body{
     padding: 20px;
     background-image: url(../images/BgOp.jpg);
     background-size: 100%;
+    background-attachment: fixed;
 }
 input{
     display: inline-block;
