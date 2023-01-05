@@ -12,6 +12,12 @@
     src: url(../fonts/Sono-ExtraBold.ttf);
 }
 
+@media screen and (orientation:landscape) {
+    body{
+        background-image: url(../images/BgOp-LANDSCAPE.jpg);
+    }
+}
+
 :root{
     --sono1: 'Sono Light';
     --sono2: 'Sono Regular';
@@ -118,7 +124,7 @@ li{
 ul{
     display: flex;
     width: 80%;
-    max-width: 28.2em;
+    max-width: 26em;
     padding: 10px 0;
     position: relative;
     margin: auto;
