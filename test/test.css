@@ -147,7 +147,7 @@ aa*/
     text-align: right; 
     position: absolute;
     right: 0;
-    text-shadow: .5px .5px 3px rgba(0, 238, 255, 0.459);
+    text-shadow: .5px .5px 3px rgb(0, 0, 0);
     width: fit-content;
     max-width: none;
     padding: 0;
