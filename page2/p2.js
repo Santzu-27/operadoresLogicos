@@ -35,7 +35,7 @@ function startButtons(){
             } else {
                 chosenValues.v1 = Number(chosenValues.v1)
                 chosenValues.v2 = Number(chosenValues.v2)
-                if (!Number.isInteger(chosenValues.v1) && !Number.isInteger(chosenValues.v2)) {
+                if (!(Number.isInteger(chosenValues.v1)) && !(Number.isInteger(chosenValues.v2))) {
                     alert('Apenas números inteiros! (sem vírgula)')
                 }else{
                     if ((chosenValues.v1 || chosenValues.v2) > 999 || (chosenValues.v2 || chosenValues.v1) < -999){
